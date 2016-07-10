@@ -1,4 +1,4 @@
-'''
+
 from bs4 import BeautifulSoup
 import urllib3
 import re
@@ -89,11 +89,7 @@ def least(team,stat):
     return("The Slacker of the team for least"+ " "+ stat +" "+ "is" + " "+  minimum+ " "+ "with" + " "+ check[minimum]+ " " +" "+stat)
 #check=records(chups,"PTS")
 #print(check)
-'''
-'''
+
 def main():
     WhatStat = input("What Stat are you interested in: ")
     records(chups,WhatStat)
-
-main()
-'''

@@ -1,11 +1,11 @@
 from flask import Flask,render_template,request,redirect,url_for
-#from cool_projects.hockey import *
+from cool_projects.hockey import *
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return 'Hi'
-    #return most(teamstats(),"G")
+    #return 'Hi'
+    return most(teamstats(),"G")
 
 
 
