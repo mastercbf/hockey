@@ -1,21 +1,24 @@
 from flask import Flask,render_template,request,redirect,url_for
-from cool_projects.hockey import *
+#from cool_projects.hockey import *
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return most(teamstats(),"G")
+    return 'Hi'
+    #return most(teamstats(),"G")
 
 
 
 @app.route("/mostgoals")
 def mostgoals():
-    return most(teamstats(),"G")
+    return 'Most'
+    #return most(teamstats(),"G")
 
 @app.route("/leastgoals")
 def leastgoals():
-    return least(teamstats(),"G")
+    return 'Least'
+    #return least(teamstats(),"G")
 
 if __name__ == "__main__":
-    app.debug=True
+    #app.debug=True
     app.run()
