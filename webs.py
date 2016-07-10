@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    #return 'Hi'
-    return most(teamstats(),"G")
+    return 'Hi'
+    #return most(teamstats(),"G")
 
 
 
